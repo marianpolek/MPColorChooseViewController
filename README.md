@@ -18,7 +18,8 @@ You have to add this on view controller. This example is in appDelegate.m file, 
 
 and next add delegating method for catching color 
 
--(void)colorDidChanged:(UIColor*)color{
+- (void) colorDidChanged: (UIColor*) color{
+- 
     NSLog(@"%@",color);
     [self.navigationController.navigationBar setTintColor:color];
 }
