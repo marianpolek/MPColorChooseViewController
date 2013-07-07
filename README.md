@@ -7,7 +7,7 @@ MPColorChooseViewController is class, that have ability tu realtime changing col
 
 
 
-HOW TO USE IT:
+HOW TO IMPLEMENT IT:
 
 You have to add this on view controller. This example is in appDelegate.m file, but you can add it wherever you want
 
@@ -26,3 +26,13 @@ and next add delegating method for catching color
 }
 ```
 also you need import .h file and also add MPColorChooseDelegate to .h file for working
+
+
+
+HOW TO USE IT:
+
+just move sliders to change colors
+You can also tap on buttons < and > for change values for every slider at once. 
+Also you can tap on button and move finger for quicker sliding everyone
+
+
