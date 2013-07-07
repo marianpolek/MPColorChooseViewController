@@ -9,7 +9,7 @@ MPColorChooseViewController is class, that have ability tu realtime changing col
 
 HOW TO USE IT:
 
-You have to add this on view controller
+You have to add this on view controller. This example is in appDelegate.m file, but you can add it wherever you want
   
     MPColorChooseViewController *colorchoose = [[MPColorChooseViewController alloc] init];
     [colorchoose setDelegate:self];
