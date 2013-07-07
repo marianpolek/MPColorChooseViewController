@@ -44,12 +44,16 @@
     [down setFrame:CGRectMake(10, 135, 30, 30)];
     [down addTarget:self action:@selector(actionDown:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:down];
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(actionDown:)];
+    [down addGestureRecognizer:longPress];
     
     UIButton *up = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [up setTitle:@">" forState:UIControlStateNormal];
     [up setFrame:CGRectMake(60, 135, 30, 30)];
     [up addTarget:self action:@selector(actionUp:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:up];
+    UILongPressGestureRecognizer *longPress2 = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(actionUp:)];
+    [up addGestureRecognizer:longPress2];
     
     label = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 230, 30)];
     [label setBackgroundColor:[UIColor clearColor]];
