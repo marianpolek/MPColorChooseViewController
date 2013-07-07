@@ -31,7 +31,7 @@ also you need import .h file and also add MPColorChooseDelegate to .h file for w
 
 HOW TO USE IT:
 
-just move sliders to change colors
+Just move sliders to change colors.
 You can also tap on buttons < and > for change values for every slider at once. 
 Also you can tap on button and move finger for quicker sliding everyone
 
