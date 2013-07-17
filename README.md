@@ -14,7 +14,7 @@ You have to add this on view controller. This example is in appDelegate.m file, 
 ``` 
 MPColorChooseViewController *colorchoose = [[MPColorChooseViewController alloc] init];
 [colorchoose setDelegate:self];
-[colorchoose.view setFrame:CGRectMake(0, 100, 250, 140)];
+[colorchoose.view setFrame:CGRectMake(0, 100, 250, 170)];
 [self.window.rootViewController.view addSubview:colorchoose.view];
 ```
 and next add delegating method for catching color 
