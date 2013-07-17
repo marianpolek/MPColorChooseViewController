@@ -9,6 +9,8 @@ MPColorChooseViewController is class, that have ability tu realtime changing col
 
 HOW TO IMPLEMENT IT:
 
+Just download example project to see what's going on.
+For implementing in your own project do next steps.
 You have to add this on view controller. This example is in appDelegate.m file, but you can add it wherever you want
 
 ``` 
