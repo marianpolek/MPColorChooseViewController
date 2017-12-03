@@ -119,7 +119,7 @@
         [_delegate colorDidChanged:[UIColor colorWithRed:colorR/255.0f green:colorG/255.0f blue:colorB/255.0f alpha:1]];
     }
     
-    [label setText:[NSString stringWithFormat:@"R: %i, G: %i, B: %i",colorR, colorG, colorB]];
+    [label setText:[NSString stringWithFormat:@"R: %li, G: %li, B: %li",(long)colorR, (long)colorG, (long)colorB]];
 }
 
 - (void)didReceiveMemoryWarning

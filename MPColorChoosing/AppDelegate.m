@@ -27,8 +27,8 @@
     
     nc = [[UINavigationController alloc] initWithRootViewController:vc];
     // Override point for customization after application launch.
-    self.viewController = nc;
-    self.window.rootViewController = self.viewController;
+    self.viewController = nc.viewControllers[0];
+    self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
     MPColorChooseViewController *colorchoose = [[MPColorChooseViewController alloc] init];
@@ -41,7 +41,7 @@
 
 -(void) colorDidChanged: (UIColor*) color{
     NSLog(@"%@",color);
-    [nc.navigationBar setTintColor:color];
+    [nc.navigationBar setBackgroundColor:color];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
